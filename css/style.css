@@ -55,6 +55,11 @@ header {
     height: 100px;
     color: white;
 }
+@media (max-width:767px) {
+    header {
+        height: 145px;
+    }
+}
 header .container {
     display: flex;
     justify-content: space-between;
@@ -104,7 +109,7 @@ header ul li {
 }
 @media (max-width:560px) {
     header ul li {
-        padding: 10px 7px;
+        padding: 10px 5px;
     }
 }
 header ul li a {
@@ -146,7 +151,9 @@ header ul li a i {
 }
 @media (max-width:992px) {
     .landing {
-        height: 84vh;
+        height: calc(100vh + 100px);
+    }
+}
     }
 }
 .landing .container {
@@ -174,7 +181,7 @@ header ul li a i {
 @media (max-width:767px) {
     .landing .text {
         margin-bottom: 0;
-        padding-top: 200px;
+        padding-top: 100px;
     }
 }
 .landing .text h1 {
